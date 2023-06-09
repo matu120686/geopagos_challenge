@@ -7,6 +7,8 @@ require_once 'Torneo.php';
 use PHPUnit\Framework\TestCase;
 use GuzzleHttp\Client;
 
+
+
 class TorneoApiTest extends TestCase
 {
     private $client;
@@ -14,7 +16,7 @@ class TorneoApiTest extends TestCase
     protected function setUp(): void
     {
         $this->client = new Client([
-            'base_uri' => 'http://localhost',
+            'base_uri' => 'http://geopagoschallenge.des',
         ]);
     }
 
@@ -35,7 +37,13 @@ class TorneoApiTest extends TestCase
         $data = json_decode($response->getBody(), true);
 
         $this->assertEquals(200, $response->getStatusCode());
-        $this->assertArrayHasKey('nombre', $data);
-        $this->assertNotEmpty($data['nombre']);
+        //  mostrar la salida
+
+        $this->assertArrayHasKey('ganador', $data, 'La clave "nombre" no está presente en el array.');
+
+        $ganador = $data['ganador'] ?? null;
+
+        $this->assertNotEmpty($ganador, 'El nombre del ganador está vacío.');
+        echo "El ganador del torneo es: " . $ganador;
     }
 }

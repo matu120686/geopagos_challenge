@@ -3,7 +3,7 @@
 require_once 'Jugador.php';
 require_once 'Enfrentamiento.php';
 require_once 'Torneo.php';
-
+require_once 'vendor/autoload.php';
 // Ejemplo de uso
 $jugadores = [
     new Jugador('Jugador 1', 80, 10),

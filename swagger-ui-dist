@@ -1,0 +1,10 @@
+- index.html
+- swagger-ui-bundle.js
+- swagger-ui-standalone-preset.js
+- swagger-ui.css
+- dist/
+  - swagger-ui.js
+  - swagger-ui.css.map
+- fonts/
+  - swagger-ui.woff
+  - swagger-ui.woff2
