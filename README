@@ -1,0 +1,23 @@
+Torneo de Jugadores
+Este es un proyecto que simula un torneo de jugadores y determina al ganador en base a su nivel de habilidad y suerte.
+
+Modelo de objetos
+El modelo de objetos utilizado en este proyecto consta de las siguientes clases:
+
+Jugador: Representa a un jugador con sus atributos de nombre, nivel de habilidad y suerte.
+Enfrentamiento: Representa un enfrentamiento entre dos jugadores y determina al ganador.
+Torneo: Representa el torneo en sí, con un conjunto de jugadores y la lógica para simular el torneo y determinar al ganador.
+Tests realizados
+Se han realizado pruebas unitarias utilizando PHPUnit para verificar el correcto funcionamiento del código. Los tests verifican la simulación del torneo y aseguran que el ganador sea un objeto de la clase Jugador y esté presente en la lista de jugadores proporcionada.
+
+Documentación
+La documentación del proyecto se encuentra en los comentarios del código fuente de cada archivo. Se han incluido explicaciones detalladas de las clases y métodos para facilitar la comprensión y el mantenimiento del código.
+
+Estilo de código
+El código sigue las convenciones de estilo de código recomendadas para PHP. Se utiliza la convención de nombres CamelCase para los nombres de clases y métodos, y se sigue un estilo de sangrado de cuatro espacios para mejorar la legibilidad del código.
+
+Arquitectura
+El proyecto sigue una arquitectura orientada a objetos, dividiendo la funcionalidad en diferentes clases y promoviendo la reutilización y la modularidad del código. Se han separado las clases en archivos individuales para facilitar su mantenimiento y legibilidad.
+
+Conocimiento funcional
+El proyecto utiliza conceptos de programación orientada a objetos, tales como clases, objetos, encapsulamiento y composición. También se aplica la lógica de simulación de un torneo y la determinación del ganador basada en el nivel de habilidad y la suerte de los jugadores.

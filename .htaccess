@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redirige las solicitudes a la carpeta 'dist' de Swagger UI
+RewriteRule ^swagger/?$ swagger/dist/ [L]
+RewriteRule ^swagger/(.*)$ swagger/dist/$1 [L]

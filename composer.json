@@ -13,5 +13,9 @@
     ],
     "require-dev": {
         "phpunit/phpunit": "^9.6"
+    },
+    "require": {
+        "zircote/swagger-php": "^4.7",
+        "guzzlehttp/guzzle": "^7.7"
     }
 }
